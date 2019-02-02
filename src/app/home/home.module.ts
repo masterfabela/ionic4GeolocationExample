@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { GeolocationService } from '../services/geolocation/geolocation.service';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    GeolocationService,
     RouterModule.forChild([
       {
         path: '',
@@ -20,4 +22,9 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+  startNavigation() {
+    const geolocation = new GeolocationService();
+    geolocation.startGeoLocation();
+  }
+}
