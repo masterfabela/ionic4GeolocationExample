@@ -7,13 +7,18 @@ Para compilar el proyecto necesitamos
 - Node
 
 ## Instalar dependencias
-<pre>npm i</pre>
+
+`npm i`
 
 ## Generar una plataforma
-<pre>ionic cordova platform add android</pre>
+
+`ionic cordova platform add android`
+
 
 ## Lanzar la app en dispositivo
+
 ### Android
-<pre>ionic cordova run android</pre>
+
+`ionic cordova run android`
 
 Tambien podemos usar la extension ```vsmobile.cordova-tools``` para VSCode que nos permite hacer debug en el editor
