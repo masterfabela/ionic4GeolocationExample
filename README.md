@@ -6,5 +6,14 @@ Para compilar el proyecto necesitamos
 - Ionic 4
 - Node
 
-Ejecutamos el comando que genera el proyecto  
-`npm start`
+## Instalar dependencias
+<pre>npm i</pre>
+
+## Generar una plataforma
+<pre>ionic cordova platform add android</pre>
+
+## Lanzar la app en dispositivo
+### Android
+<pre>ionic cordova run android</pre>
+
+Tambien podemos usar la extension ```vsmobile.cordova-tools``` para VSCode que nos permite hacer debug en el editor
