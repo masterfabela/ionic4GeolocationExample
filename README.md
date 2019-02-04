@@ -2,9 +2,8 @@
 
 Para compilar el proyecto necesitamos
 
-- Cordova
-- Ionic 4
 - Node
+- NPM
 
 ## Instalar dependencias
 
