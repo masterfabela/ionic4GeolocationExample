@@ -4,6 +4,7 @@ Para compilar el proyecto necesitamos
 
 - Node
 - NPM
+- Cordova CLI (Instalacion global) `npm i -g cordova`
 
 ## Instalar dependencias
 
