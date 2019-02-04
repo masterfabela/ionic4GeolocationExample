@@ -4,7 +4,7 @@ import { Map } from 'leaflet';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  styleUrls: ['./map.component.scss'],
 })
 export class MapComponent implements OnInit {
   @ViewChild('map') mapContainer: ElementRef;
@@ -21,7 +21,5 @@ export class MapComponent implements OnInit {
     */
   }
 
-  loadMap() {
-    this.map = new Map(this.mapContainer.nativeElement);
-  }
+  loadMap() {}
 }

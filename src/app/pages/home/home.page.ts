@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GeolocationService } from '../services/geolocation/geolocation.service';
+import { GeolocationService } from '../../services/geolocation/geolocation.service';
 
 @Component({
   selector: 'app-home',

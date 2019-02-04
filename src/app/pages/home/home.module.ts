@@ -15,10 +15,10 @@ import { MapComponent } from './map/map.component';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
-      }
-    ])
+        component: HomePage,
+      },
+    ]),
   ],
-  declarations: [HomePage, MapComponent]
+  declarations: [HomePage, MapComponent],
 })
 export class HomePageModule {}
