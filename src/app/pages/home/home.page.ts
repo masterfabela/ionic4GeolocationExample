@@ -18,4 +18,8 @@ export class HomePage {
   showLocations() {
     this.geolocation.showLocations();
   }
+
+  stopBackGroundLocation() {
+    this.geolocation.stopGeolocation();
+  }
 }

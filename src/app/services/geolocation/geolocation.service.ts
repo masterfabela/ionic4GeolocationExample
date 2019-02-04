@@ -26,7 +26,7 @@ export class GeolocationService {
 
     BackgroundGeolocation.configure(GEOLOCATION_CONFIG)
       .then(location => {
-        alert(location);
+        alert(JSON.stringify(location));
       })
       .catch(err => {
         console.log(err);
@@ -43,13 +43,19 @@ export class GeolocationService {
 
   getStatus() {
     BackgroundGeolocation.checkStatus().then(status => {
-      alert(status);
+      alert(JSON.stringify(status));
     });
   }
 
   showLocations() {
     BackgroundGeolocation.getLocations().then(locations => {
-      console.log(locations);
+      console.log(JSON.stringify(locations));
+    });
+  }
+
+  stopGeolocation() {
+    BackgroundGeolocation.finish().then(result => {
+      console.log(JSON.stringify(result));
     });
   }
 }
