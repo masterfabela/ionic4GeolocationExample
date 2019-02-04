@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { GeolocationService } from '../services/geolocation/geolocation.service';
-import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +7,15 @@ import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
+  geolocation = new GeolocationService();
   startNavigation() {
-    new GeolocationService().startGeoLocation();
+    this.geolocation.startGeoLocation();
+  }
+  getGeolocationStatus() {
+    this.geolocation.getStatus();
+  }
+
+  showLocations() {
+    this.geolocation.showLocations();
   }
 }
