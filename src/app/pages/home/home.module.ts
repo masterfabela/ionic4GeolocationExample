@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { IonicStorageModule } from '@ionic/storage';
 
 import { HomePage } from './home.page';
 import { MapComponent } from './map/map.component';
@@ -18,7 +19,8 @@ import { MapComponent } from './map/map.component';
         component: HomePage,
       },
     ]),
+    IonicStorageModule.forRoot()
   ],
   declarations: [HomePage, MapComponent],
 })
-export class HomePageModule {}
+export class HomePageModule { }
