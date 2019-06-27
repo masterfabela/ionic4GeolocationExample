@@ -35,3 +35,5 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 package-lock.json
 .angulardoc.json
+.vscode/typings/jquery/jquery.d.ts
+typings/cordova-typings.d.ts
