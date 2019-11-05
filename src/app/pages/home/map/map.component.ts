@@ -13,13 +13,12 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
     this.loadMap();
-    /*
+  }
+
+  loadMap() {
     Leaflet.map('map', {
       center: [51.505, -0.09],
       zoom: 13
     });
-    */
   }
-
-  loadMap() {}
 }
